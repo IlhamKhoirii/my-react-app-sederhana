@@ -1,16 +1,26 @@
+
+
 import React from 'react';
+import { Route, Routes, Link } from 'react-router-dom';
+import Home from './pages/Home';
+
 import Header from './components/Header';
 import Counter from './components/Counter';
 
 function App() {
   return (
-    <div className="App">
-      <Header title="Aplikasi React Saya" />
-      <main>
-        <h2>Selamat datang di aplikasi React</h2>
-        <p>Ini adalah contoh halaman sederhana menggunakan React.</p>
-        <Counter />
-      </main>
+    <div>
+      <nav>
+        <ul>
+          <li><Link to="/">Beranda</Link></li>
+          <li><Link to="/counter">Counter</Link></li>
+        </ul>
+      </nav>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/counter" element={<Counter />} />
+      </Routes>
     </div>
   );
 }

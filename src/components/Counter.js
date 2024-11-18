@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 
 function Counter() {
-    const [count, setCount] = useState(0);
+    const [angka, fungsiSetAngka] = useState(0);
 
     return (
         <div>
-            <p>Anda sudah klik sebanyak {count} kali</p>
-            <button onClick={() => setCount(count + 1)}>
+            <p>Anda sudah klik sebanyak {angka} kali</p>
+            <button onClick={() => fungsiSetAngka(angka + 1)}>
                 Klik saya
             </button>
         </div>
