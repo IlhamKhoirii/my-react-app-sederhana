@@ -15,8 +15,8 @@ function Counter2() {
     return (
         <div>
             Count: {angka.count}
-            <button onClick={() => fungsiMengubahNilai({ type: 'increment' })}>+</button>
-            <button onClick={() => fungsiMengubahNilai({ type: 'decrement' })}>-</button>
+            <button onClick={() => fungsiMengubahNilai({ type: 'increment' })}> + </button>
+            <button onClick={() => fungsiMengubahNilai({ type: 'decrement' })}> - </button>
         </div>
     );
 }
