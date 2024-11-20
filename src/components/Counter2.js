@@ -2,7 +2,7 @@ import React, { useReducer } from 'react';
 const initialState = { count: 0 };
 function reducer(angka, action) {
     switch (action.type) {
-        case 'increment':
+        case 'increment': //mirip if else if
             return { count: angka.count + 1 };
         case 'decrement':
             return { count: angka.count - 1 };
