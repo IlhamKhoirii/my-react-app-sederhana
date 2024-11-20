@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 function Counter() {
-    const [angka, fungsiSetAngka] = useState(0);
+    const [angka, fungsiSetAngka] = useState(10);
 
     return (
         <div>
